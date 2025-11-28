@@ -1,0 +1,33 @@
+https://www.kaggle.com/datasets/saurabhshahane/body-measurements-dataset
+
+Body Measurements Dataset
+About Dataset
+Context
+
+Attribute information:
+
+Gender (Male and Female (M=1 & F= 2) (391 Males & 324 Females)
+Age (1 year and above)
+HeadCircumference (in inches)
+ShoulderWidth (in inches)
+ChestWidth (in inches)
+Belly (in inches)
+Waist (in inches)
+Hips (in inches)
+ArmLength (in inches)
+ShoulderToWaist (in inches)
+WaistToKnee (in inches)
+LegLength (in inches)
+TotalHeight - from head to toe (in inches)
+Class Label (Not defined)
+
+Dataset Characteristics: Multivariate, Numerical
+Attribute Characteristics: Real
+Associated Tasks: Classification, Regression
+Number of Instances: 13
+Number of Attributes: 716
+Missing Values: No
+Domain: cross domain
+Acknowledgements
+
+Kiru, Muhammad (2021), “Body Measurements Datasets”, Mendeley Data, V1, doi: 10.17632/bjv6c9pmp4.1

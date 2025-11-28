@@ -4,4 +4,7 @@ version = "0.1.0"
 description = "Some examples to illustrate statistics tools"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pandas>=2.3.3",
+    "seaborn>=0.13.2",
+]
