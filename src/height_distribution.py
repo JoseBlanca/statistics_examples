@@ -26,13 +26,14 @@ def get_body_measurements_data(min_age=None):
         gender_to_letter(gender) for gender in measurements["Gender"]
     ]
     measurements["Height (cm)"] = measurements["TotalHeight"] * 2.54
+    measurements["Waist (cm)"] = measurements["Waist "] * 2.54
     if min_age:
         measurements = measurements.loc[measurements["Age"] >= min_age, :]
     return measurements
 
 
 def plot_height_distribution(min_age=None):
-    measurements = get_body_measurements_data(min_age=20)
+    measurements = get_body_measurements_data(min_age=min_age)
 
     seaborn.displot(
         measurements,
@@ -47,5 +48,15 @@ def plot_height_distribution(min_age=None):
     plt.savefig(plot_path, bbox_inches="tight")
 
 
+def plot_height_waist_relation(min_age=None):
+    measurements = get_body_measurements_data(min_age=min_age)
+
+    seaborn.relplot(measurements, x="Height (cm)", y="Waist (cm)", hue="Gender")
+
+    plot_path = CHARTS_DIR / "height_vs_waist.svg"
+    plt.savefig(plot_path, bbox_inches="tight")
+
+
 if __name__ == "__main__":
     plot_height_distribution(min_age=20)
+    plot_height_waist_relation(min_age=20)
