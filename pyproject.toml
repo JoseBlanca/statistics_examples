@@ -1,0 +1,7 @@
+[project]
+name = "statistics-examples"
+version = "0.1.0"
+description = "Some examples to illustrate statistics tools"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
